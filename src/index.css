@@ -1,13 +1,108 @@
+html {
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #353546;
+  color: lightgray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.newContract {
+  display: flex;
+  flex-direction: column;
+}
+
+.newContract > * {
+  padding: 1em 2em;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: solid 1px black;
+  font-weight: bold;
+  background-color: #0f6cd2;
+  color: #ff4280;
+}
+button {
+  color: #0f6cd2;
+  background-color: #ff4280;
+  transition: background-color 1s, transform 1s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0f6cd2;
+  color: #ff4280;
+  transform: scale(1.02);
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  width: 90vw;
+}
+
+.App > * {
+  max-width: 30%;
+}
+
+.manageContract {
+  display: flex;
+  flex-direction: column;
+}
+
+.manageContract > * {
+  padding: 1em 2em;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: solid 1px black;
+  font-weight: bold;
+  background-color: #0f6cd2;
+  color: #ff4280;
+}
+.connect {
+  max-height: 100px;
+  padding: 1em 2em;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: solid 1px black;
+  font-weight: bold;
+}
+
+.manageContract > button {
+  color: #0f6cd2;
+  background-color: #ff4280;
+  transition: background-color 1s, transform 1s;
+}
+
+.manageContract > button:hover {
+  background-color: #0f6cd2;
+  color: #ff4280;
+  transform: scale(1.02);
+}
+
+.newContract > button {
+  color: #0f6cd2;
+  background-color: #ff4280;
+  transition: background-color 1s, transform 1s;
+}
+
+.newContract > button:hover {
+  background-color: #0f6cd2;
+  color: #ff4280;
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #ff4280;
+}
+
+@media (max-width: 900px) {
+  .App {
+    flex-direction: column;
+  }
+  .App > * {
+    max-width: 100%;
+  }
 }
