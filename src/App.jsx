@@ -158,9 +158,7 @@ export default function App() {
     }
   }
 
-  useEffect(() => {
-    connectWallet();
-  }, []);
+
 
   return (
     <div className="App">
