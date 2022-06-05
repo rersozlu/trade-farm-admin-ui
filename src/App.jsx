@@ -158,8 +158,6 @@ export default function App() {
     }
   }
 
-
-
   return (
     <div className="App">
       <div>
@@ -282,7 +280,7 @@ export default function App() {
             setData((prev) => ({ ...prev, rewardTokenAddress: e.target.value }))
           }
         >
-          <option value="">-Choose a Reward Token-</option>
+          <option value="">-Reward Token to Deposit-</option>
           <option value="0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E">
             USDC
           </option>
